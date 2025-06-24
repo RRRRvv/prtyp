@@ -1,0 +1,174 @@
+/* ==============================
+   1. Reset & Base Rules
+   ============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* fallback black */
+  color: #fff;
+}
+
+/* ==============================
+   2. Full‐Screen Background
+   ============================== */
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('your-background.jpg') center center / cover no-repeat;
+  animation: slideBg 2s ease-out forwards;
+  z-index: -2; /* behind everything */
+}
+#background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  backdrop-filter: blur(8px);
+  z-index: -1; /* between background image and content */
+}
+
+@keyframes slideBg {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0);        }
+}
+
+/* ==============================
+   3. Gallery Containers
+   ============================== */
+.gallery {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: transparent; /* no gray fallback */
+}
+@media (min-width: 768px) {
+  .swiper-container { height: 400px; }
+}
+@media (min-width: 1200px) {
+  .swiper-container { height: 500px; }
+}
+
+/* ==============================
+   4. Slides & Ambient Canvas
+   ============================== */
+.swiper-slide {
+  position: relative;       /* so .ambient-canvas can be absolute */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #000 !important; /* pure black behind slide */
+}
+
+/* Ambient canvas sits behind the image and shows the blended glow */
+.ambient-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;             /* behind the image */
+  pointer-events: none;   /* clicks pass through */
+  filter: brightness(120%) blur(2px);    /* heavy blur for seamless glow */
+  opacity: 0.8;           /* glow brightness */
+  background: transparent;
+  border-radius: 33px;
+  /*-webkit-mask-image: radial-gradient(circle,black 90%, transparent 100%);*/
+}
+
+/* The actual slide image */
+.swiper-slide img {
+  position: relative;
+  z-index: 1;             /* above the ambient canvas */
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+.swiper-slide img:hover {
+  transform: scale(1.02);
+}
+
+/* Box‐shadow around the active image (using ColorThief) */
+.swiper-slide.active-slide img {
+  box-shadow: 0 0 80px 10px rgba(255, 255, 255, 0.4);
+}
+
+/* ==============================
+   5. Navigation Arrows
+   ============================== */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+  z-index: 10; /* above canvas & image */
+}
+
+/* ==============================
+   6. Description Container
+   ============================== */
+.description-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  display: none; /* shown only when an image is clicked */
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* ==============================
+   7. Centered Links Section
+   ============================== */
+.links-section {
+  text-align: center;
+  margin: 4rem auto 2rem;
+  font-size: 1rem;
+}
+.links-section a {
+  color: #0af;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.links-section a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   8. Responsive Tweaks
+   ============================== */
+@media (max-width: 576px) {
+  .links-section {
+    font-size: 0.9rem;
+    margin: 2rem 1rem;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none; /* hide arrows on very small screens */
+  }
+}

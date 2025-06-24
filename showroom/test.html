@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>senfou</title>
+</head>
+<body>
+
+
+<section class="wrapper">
+  <video controls muted class="video" id="js-video" src="/render/nkm/otherGCLASS/chosen/CWhisk_d952b8a391.jpg"></video>
+  <canvas width="10" height="6" aria-hidden="true" class="canvas" id="js-canvas"></canvas>
+</section>
+
+
+<style type="text/css">
+/* Page styles */
+
+:root {
+  --color-background: rgb(15, 15, 15);
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--color-background);
+  min-height: 100%;
+}
+
+/* Required styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.video,
+.canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  box-shadow: inset 0 0 4rem 4.5rem var(--color-background);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 10.4;
+}
+
+.video {
+  padding: 7rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .canvas {
+    display: none !important;
+  }
+}
+
+</style>
+
+<script type="text/javascript">
+class VideoWithBackground {
+  video;
+  canvas;
+  step;
+  ctx;
+
+  constructor(videoId, canvasId) {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    if (!mediaQuery.matches) {
+      this.video = document.getElementById(videoId);
+      this.canvas = document.getElementById(canvasId);
+
+      window.addEventListener("load", this.init, false);
+      window.addEventListener("unload", this.cleanup, false);
+    }
+  }
+
+  draw = () => {
+    this.ctx.drawImage(this.video, 0, 0, this.canvas.width, this.canvas.height);
+  };
+
+  drawLoop = () => {
+    this.draw();
+    this.step = window.requestAnimationFrame(this.drawLoop);
+  };
+
+  drawPause = () => {
+    window.cancelAnimationFrame(this.step);
+    this.step = undefined;
+  };
+
+  init = () => {
+    this.ctx = this.canvas.getContext("2d");
+    this.ctx.filter = "blur(1px)";
+
+    this.video.addEventListener("loadeddata", this.draw, false);
+    this.video.addEventListener("seeked", this.draw, false);
+    this.video.addEventListener("play", this.drawLoop, false);
+    this.video.addEventListener("pause", this.drawPause, false);
+    this.video.addEventListener("ended", this.drawPause, false);
+  };
+
+  cleanup = () => {
+    this.video.removeEventListener("loadeddata", this.draw);
+    this.video.removeEventListener("seeked", this.draw);
+    this.video.removeEventListener("play", this.drawLoop);
+    this.video.removeEventListener("pause", this.drawPause);
+    this.video.removeEventListener("ended", this.drawPause);
+  };
+}
+
+const el = new VideoWithBackground("js-video", "js-canvas");
+
+</script>
+
+</body>
+</html>
