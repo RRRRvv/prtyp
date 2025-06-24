@@ -1,0 +1,248 @@
+{
+  "body_colors": {
+    "colors": [
+          { "name": "Matte Black",  "value": "00FFFFFF" },
+          { "name": "Light Chrome",  "value": "#CCCCCC" },
+          { "name": "Hot Pink",  "value": "#ff69b4" },
+          { "name": "Shiny Gold",  "value": "#ffd700" },
+          { "name": "Neon Cyan",  "value": "#00ffff" },
+          { "name": "Electric Purple",  "value": "#8a2be2" },
+          { "name": "Spring",  "value": "#00ff7f" },
+          { "name": "Yellow",  "value": "#ffff00" },
+          { "name": "Deep black gloss",  "value": "#0D0D0D" },
+          { "name": "tester", "value": "#ff810f"}
+    ],
+    "target": "MMercedesAMG_G63SUVRewardRecycled_2020Paint_Material1",
+    "default": 5,
+    "sub": {
+      "Body2": {
+        "colors": [
+          { "name": "Matte Black",  "value": "#1A1A1A" },
+          { "name": "Light Chrome",  "value": "#CCCCCC" },
+          { "name": "Hot Pink",  "value": "#ff69b4" },
+          { "name": "Shiny Gold",  "value": "#ffd700" },
+          { "name": "Neon Cyan",  "value": "#00ffff" },
+          { "name": "Electric Purple",  "value": "#8a2be2" },
+          { "name": "Spring",  "value": "#00ff7f" },
+          { "name": "Yellow",  "value": "#ffff00" },
+          { "name": "Deep black gloss",  "value": "#0D0D0D" },
+          { "name": "tester", "value": "#CCCCCC"}
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020Paint_Material1a",
+        "default": 5
+      },
+      "Body3": {
+        "colors": [
+          { "name": "VIP",         "value": "#000000" },
+          { "name": "Dark",         "value": "#1C1C1C" },
+          { "name": "Luxury",         "value": "#121212" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020Window_Material1",
+        "default": 1
+      },
+      "Body4": {
+        "colors": [
+          { "name": "Matte Black",         "value": "#141414" },
+          { "name": "Tomato Red",         "value": "#ff6347" },
+          { "name": "turquoise",         "value": "#40e0d0" },
+          { "name": "gold",         "value": "#ffd700" },
+          { "name": "bubblegum",         "value": "#ff69b4" },
+          { "name": "chartreuse",         "value": "#7fff00" },
+          { "name": "neon orange",   "value": "#ff8c00" },
+          { "name": "spring",   "value": "#00fa9a" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020InteriorA_Material1",
+        "default": 2
+      },
+      "Body5": {
+        "colors": [
+          { "name": "Nappa",         "value": "#2C2C2C" },
+          { "name": "Mocha",         "value": "#4E342E" },
+          { "name": "Beige",         "value": "#D7CCC8" },
+          { "name": "Saddle",         "value": "#A1887F" },
+          { "name": "Espresso",         "value": "#5D4037" },
+          { "name": "Onyx",         "value": "#212121" },
+          { "name": "Porcelain",   "value": "#BCAAA4" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020InteriorTillingCol_72b322",
+        "default": 3
+      },
+      "Body6": {
+        "colors": [
+          { "name": "black",         "value": "#1b1b1b" },
+          { "name": "espresso",         "value": "#3e2723" },
+          { "name": "Burnt Orange",         "value": "#bf360c" },
+          { "name": "AMGRed",         "value": "#c62828" },
+          { "name": "Yellow",         "value": "#fdd835" },
+          { "name": "AMGBlue",         "value": "#1565c0" },
+          { "name": "Brown",   "value": "#4E342E" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020Carbon1_Material1",
+        "default": 0
+      },
+      "Body1n": {
+        "colors": [
+          { "name": "Matte Black",         "value": "#141414" },
+          { "name": "Tomato Red",         "value": "#ff6347" },
+          { "name": "turquoise",         "value": "#40e0d0" },
+          { "name": "gold",         "value": "#ffd700" },
+          { "name": "bubblegum",         "value": "#ff69b4" },
+          { "name": "chartreuse",         "value": "#7fff00" },
+          { "name": "neon orange",   "value": "#ff8c00" },
+          { "name": "spring",   "value": "#00fa9a" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020Grille1A_Material1",
+        "default": 0
+      },
+      "Body2n": {
+        "colors": [
+          { "name": "Matte Black",         "value": "#141414" },
+          { "name": "Tomato Red",         "value": "#ff6347" },
+          { "name": "turquoise",         "value": "#40e0d0" },
+          { "name": "gold",         "value": "#ffd700" },
+          { "name": "bubblegum",         "value": "#ff69b4" },
+          { "name": "chartreuse",         "value": "#7fff00" },
+          { "name": "neon orange",   "value": "#ff8c00" },
+          { "name": "spring",   "value": "#00fa9a" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020Grille3A_Material1",
+        "default": 1
+      },
+      "Body3n": {
+        "colors": [
+          { "name": "Lime",         "value": "#ffff0a" },
+          { "name": "Blue Green",   "value": "#1b6770" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020Grille4A_Material1",
+        "default": 0
+      },
+      "Body4n": {
+        "colors": [
+          { "name": "Matte Black",         "value": "#141414" },
+          { "name": "Tomato Red",         "value": "#ff6347" },
+          { "name": "turquoise",         "value": "#40e0d0" },
+          { "name": "gold",         "value": "#ffd700" },
+          { "name": "bubblegum",         "value": "#ff69b4" },
+          { "name": "chartreuse",         "value": "#7fff00" },
+          { "name": "neon orange",   "value": "#ff8c00" },
+          { "name": "spring",   "value": "#00fa9a" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020Grille6A_Material1",
+        "default": 7
+      },
+      "Body5n": {
+        "colors": [
+          { "name": "Lime",         "value": "#ffff0a" },
+          { "name": "Blue Green",   "value": "#1b6770" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020Grille8A_Material1",
+        "default": 0
+      },
+      "Body6n": {
+        "colors": [
+          { "name": "Deep",         "value": "#2a2a2a" },
+          { "name": "Padded",         "value": "#3e3e3e" },
+          { "name": "charcoal",         "value": "#585858" },
+          { "name": "silver",         "value": "#727272" },
+          { "name": "cooltone",         "value": "#888888" },
+          { "name": "suede",         "value": "#444444" },
+          { "name": "soft",   "value": "#666666" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020InteriorTillingA_Material",
+        "default": 1
+      },
+      "Body7n": {
+        "colors": [
+          { "name": "Deepred",         "value": "#9e0000" },
+          { "name": "brightred",         "value": "#b80000" },
+          { "name": "AMGRed",         "value": "#d10000" },
+          { "name": "Standard",         "value": "#ff0000" },
+          { "name": "Warm",         "value": "#cc1f1a" },
+          { "name": "Blood",         "value": "#aa0e0e" },
+          { "name": "Glassy",   "value": "#e60000" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020LightA_Material1",
+        "default": 0
+      },
+      "Body8n": {
+        "colors": [
+          { "name": "Matte Black",         "value": "#141414" },
+          { "name": "Tomato Red",         "value": "#ff6347" },
+          { "name": "turquoise",         "value": "#40e0d0" },
+          { "name": "gold",         "value": "#ffd700" },
+          { "name": "bubblegum",         "value": "#ff69b4" },
+          { "name": "chartreuse",         "value": "#7fff00" },
+          { "name": "neon orange",   "value": "#ff8c00" },
+          { "name": "spring",   "value": "#00fa9a" }
+        ],
+        "target": "MMercedesAMG_G63SUVRewardRecycled_2020TexturedA_Material1",
+        "default": 6
+      },
+      "Body9n": {
+        "colors": [
+          { "name": "Lime",         "value": "#ffff0a" },
+          { "name": "Blue Green",   "value": "#1b6770" }
+        ],
+        "target": "orange_glass",
+        "default": 0
+      },
+      "Body0n": {
+        "colors": [
+          { "name": "Lime",         "value": "#ffff0a" },
+          { "name": "Blue Green",   "value": "#1b6770" }
+        ],
+        "target": "red_glass",
+        "default": 1
+      },
+      "lines": {
+        "colors": [
+          {"name" : "line1", "value": "#fa5e49"},
+          {"name" : "line2", "value": "#fff110"}
+        ],
+        "target": "material",
+        "default": 0
+      }
+    }
+  },
+  "mirror_colors": {
+    "colors": [
+      { "name": "NONE",        "value": "#8d6e63" }
+    ],
+    "target": "MMercedesAMG_G63SUVRewardRecycled_2020BadgeA_Material1",
+    "default": 0
+  },
+  "wheel_designs": {
+    "designs": [
+      { "name": "Type A", "value": "Obj_Rim_T0A", "thumb": "Render_Tyre_0A" },
+      { "name": "Type B", "value": "Obj_Rim_T0B", "thumb": "Render_Tyre_0B" }
+    ],
+    "default": 0
+  },
+  "wheel_colors": {
+    "colors": [
+      { "name": "Satin Black",      "value": "#1a1a1a" },
+      { "name": "Gloss gunmetal",    "value": "#4a4a4a" },
+      { "name": "Forged Bronze",     "value": "#6a42ef" },
+      { "name": "Aluminium Silver",  "value": "#b6b6b6" },
+      { "name": "Candy Red",         "value": "#b22222" },
+      { "name": "Champagne gold",    "value": "#cbaf87" },
+      { "name": "rose gold",         "value": "#b76e79" }
+    ],
+    "target": "MMercedesAMG_G63SUVRewardRecycled_2020Base_Material1",
+    "default": 6
+  },
+  "caliper_colors": {
+    "colors": [
+      { "name": "Ferrari Red",     "value": "#c60000" },
+      { "name": "Lambo Yellow",    "value": "#ffd300" },
+      { "name": "Electric blue",   "value": "#007bff" },
+      { "name": "Gloss black",     "value": "#0a0a0a" },
+      { "name": "Lime Green",      "value": "#a4c639" },
+      { "name": "Matte Gray",      "value": "#666666" },
+      { "name": "Anodized orange", "value": "#ff6600" },
+      { "name": "White pearl",     "value": "#f5f5f5" }
+    ],
+    "target": "MMercedesAMG_G63SUVRewardRecycled_2020Carbon1_Material1",
+    "default": 0
+  }
+}
