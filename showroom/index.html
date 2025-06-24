@@ -18,6 +18,21 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<script>
+  document.querySelectorAll('[src], [href]').forEach(el => {
+    ['src', 'href'].forEach(attr => {
+      if(el.hasAttribute(attr)) {
+        let val = el.getAttribute(attr);
+        if(val.startsWith('/render/')) {
+          el.setAttribute(attr, '/prtyp/showroom' + val);
+        }
+      }
+    });
+  });
+</script>
+
+
+  </script>
   <!-- Full-screen background -->
   <div id="background"></div>
 
