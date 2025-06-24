@@ -1,0 +1,177 @@
+{
+  "body_colors": {
+    "colors": [
+      { "name": "",   "value": "" },
+      { "name": "",       "value": "" },
+      { "name": "",      "value": "" },
+      { "name": "",   "value": "" },
+      { "name": "",       "value": "" }
+    ],
+    "target": "",
+    "default": 4,
+    "sub": {
+      "Body1": {
+        "colors": [
+          { "name": "Hyper Green",         "value": "#20C997" },
+          { "name": "Carbon Black", "value": "#2B2B2B" },
+          { "name": "Forged Gray", "value": "#5E5E5E" },
+          { "name": "Obsidian Midnight", "value": "#0A0A0A" },
+          { "name": "Gunmetal Chrome", "value": "#484848" },
+          { "name": "Stealth Blue", "value": "#1A2E40" },
+          { "name": "Infrared Carbon", "value": "#4B1F1F" },
+          { "name": "Space Silver",     "value": "#A9A9A9" }
+        ],
+        "target": "Mt_Body.001",
+        "default": 0
+      },
+      "Body2": {
+        "colors": [
+          { "name": "Hyper Green",         "value": "#20C997" },
+          { "name": "Rosso Lambo",  "value": "#FF2600" },
+          { "name": "Hyper Yellow",  "value": "#FFD500" },
+          { "name": "Cosmic Purple",  "value": "#7209B7" },
+          { "name": "Lava Orange",  "value": "#FF6A00" },
+          { "name": "Satin Black",  "value": "#1C1C1C" },
+          { "name": "Miami Blue",  "value": "#00B4D8" },
+          { "name": "Chrome Silver",  "value": "#C0C0C0" }
+        ],
+        "target": "Mt_Body.002",
+        "default": 0
+      },
+      "Body3": {
+        "colors": [
+          { "name": "Hyper Green",         "value": "#20C997" },
+          { "name": "Shadow Grey",         "value": "#333333" },
+          { "name": "Volcano Red",         "value": "#C1121F" },
+          { "name": "Cyber Green",         "value": "#00FF87" },
+          { "name": "Dark Sapphire",         "value": "#1A1E64" },
+          { "name": "Brushed Bronze",         "value": "#8C7853" },
+          { "name": "Neon Ice",         "value": "#90E0EF" },
+          { "name": "Matte Steel",   "value": "#A2A2A2" }
+        ],
+        "target": "Mt_Body.003",
+        "default": 0
+      },
+      "Body4": {
+        "colors": [
+          { "name": "Hyper Green",         "value": "#20C997" },
+          { "name": "Blood Red", "value": "#E00000" },
+          { "name": "Ceramic White", "value": "#FDFFFC" },
+          { "name": "Bullet Blue", "value": "#30336B" },
+          { "name": "Shadow Chrome", "value": "#222222" },
+          { "name": "Viper Pink", "value": "#FF00A6" },
+          { "name": "Acid Green", "value": "#B8FF00" }
+        ],
+        "target": "Mt_Body.004",
+        "default": 0
+      },
+      "Body5": {
+        "colors": [
+          { "name": "Hyper Green",         "value": "#20C997" },
+          { "name": "Amethyst Metal",         "value": "#8E44AD" },
+          { "name": "Neo Teal",         "value": "#00B894" },
+          { "name": "Royal Purple",         "value": "#5F27CD" },
+          { "name": "Gunmetal",         "value": "#666666" },
+          { "name": "Gold Alloy",         "value": "#D4AC0D" },
+          { "name": "Deep Industrial",         "value": "#2C3E50" }
+        ],
+        "target": "Mt_Body.005",
+        "default": 0
+      },
+      "Body6": {
+        "colors": [
+          { "name": "Hyper Green",         "value": "#20C997" },
+          { "name": "Shadow Matte",         "value": "#1F1F1F" },
+          { "name": "Flame Orange",         "value": "#FF4500" },
+          { "name": "Race Teal",         "value": "#009688" },
+          { "name": "Tactical Gray",         "value": "#3D3D3D" },
+          { "name": "Purple Blaze",         "value": "#6F00FF" },
+          { "name": "Satin Gold",   "value": "#FDCB6E" }
+        ],
+        "target": "Mt_Body.006",
+        "default": 3
+      },
+      "Body7": {
+        "colors": [
+          { "name": "Lambo Red",         "value": "#FF0000" },
+          { "name": "Peach Fire",         "value": "#FF6F61" },
+          { "name": "Hyper Green",         "value": "#20C997" },
+          { "name": "Pure White",         "value": "#FFFFFF" },
+          { "name": "Void Black",         "value": "#191919" },
+          { "name": "Cosmic Blue",   "value": "#1B9CFC" }
+        ],
+        "target": "Mt_Body.007",
+        "default": 2
+      },
+      "Body8": {
+        "colors": [
+          { "name": "Hyper Green",         "value": "#20C997" },
+          { "name": "Peach Fire",         "value": "#FF6F61" },
+          { "name": "Void Black",   "value": "#191919" }
+        ],
+        "target": "Mt_Body.007",
+        "default": 0
+      },
+      "lines": {
+        "colors": [
+          {"name" : "Gold Beam", "value": "#FFD700"},
+          {"name" : "Blaze Orange", "value": "#FF4D00"}
+        ],
+        "target": "Mt_TurnLights",
+        "default": 0
+      }
+    }
+  },
+  "mirror_colors": {
+    "colors": [
+      { "name": "Hyper Green",         "value": "#20C997" },
+      { "name": "Glossy piano back",  "value": "#0a0a0a" },
+      {"name" : "Gold Beam", "value": "#FFD700"},
+      { "name": "Midnight blue",      "value": "#0b0c2a" },
+      { "name": "Champagne gold",     "value": "#d4c49d" },
+      { "name": "Gun metal",          "value": "#484a4c" },
+      { "name": "AMG Red",            "value": "#7b1b1b" },
+      { "name": "Jet white pearl",    "value": "#f4f4f4" },
+      { "name": "Satin mocha",        "value": "#8d6e63" }
+    ],
+    "target": "Mt_MirrorCover",
+    "default": 8
+  },
+  "wheel_designs": {
+    "designs": [
+      { "name": "Type A", "value": "Obj_Rim_T0A", "thumb": "Render_Tyre_0A" },
+      { "name": "Type B", "value": "Obj_Rim_T0B", "thumb": "Render_Tyre_0B" }
+    ],
+    "default": 0
+  },
+  "wheel_colors": {
+    "colors": [
+          { "name": "Hyper Green",         "value": "#20C997" },
+      { "name": "Zod",   "value": "#197358" },
+      { "name": "Satin Black",      "value": "#1a1a1a" },
+      { "name": "Gloss gunmetal",    "value": "#4a4a4a" },
+      { "name": "Forged Bronze",     "value": "#6a42ef" },
+      { "name": "Aluminium Silver",  "value": "#b6b6b6" },
+      { "name": "Candy Red",         "value": "#b22222" },
+      { "name": "Champagne gold",    "value": "#cbaf87" },
+      { "name": "rose gold",         "value": "#b76e79" }
+    ],
+    "target": "Mt_AlloyWheels",
+    "default": 1
+  },
+  "caliper_colors": {
+    "colors": [
+          { "name": "Hyper Green",         "value": "#20C997" },
+      { "name": "Ferrari Red",     "value": "#c60000" },
+      { "name": "Lambo Yellow",    "value": "#ffd300" },
+      { "name": "Electric blue",   "value": "#007bff" },
+      { "name": "Gloss black",     "value": "#0a0a0a" },
+      { "name": "Lime Green",      "value": "#a4c639" },
+      { "name": "Matte Gray",      "value": "#666666" },
+      { "name": "Anodized orange", "value": "#ff6600" },
+      { "name": "White pearl",     "value": "#f5f5f5" }
+    ],
+    "target": "Mt_BrakeCaliper",
+    "default": 7
+  }
+}
